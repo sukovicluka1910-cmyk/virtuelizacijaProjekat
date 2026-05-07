@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "MotorMonitoring.Server\\MotorMonitoring.Service.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "MotorMonitoring.Client\\MotorMonitoring.Client.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

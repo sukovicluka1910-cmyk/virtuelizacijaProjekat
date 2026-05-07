@@ -1,0 +1,6 @@
+C:\Users\Korisnik\Desktop\virtuelizacija\MotorMonitoring\MotorMonitoring.Contracts\bin\Debug\MotorMonitoring.Contracts.dll
+C:\Users\Korisnik\Desktop\virtuelizacija\MotorMonitoring\MotorMonitoring.Contracts\bin\Debug\MotorMonitoring.Contracts.pdb
+C:\Users\Korisnik\Desktop\virtuelizacija\MotorMonitoring\MotorMonitoring.Contracts\obj\Debug\MotorMonitoring.Contracts.csproj.AssemblyReference.cache
+C:\Users\Korisnik\Desktop\virtuelizacija\MotorMonitoring\MotorMonitoring.Contracts\obj\Debug\MotorMonitoring.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\virtuelizacija\MotorMonitoring\MotorMonitoring.Contracts\obj\Debug\MotorMonitoring.Contracts.dll
+C:\Users\Korisnik\Desktop\virtuelizacija\MotorMonitoring\MotorMonitoring.Contracts\obj\Debug\MotorMonitoring.Contracts.pdb

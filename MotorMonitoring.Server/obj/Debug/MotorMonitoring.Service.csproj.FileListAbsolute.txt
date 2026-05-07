@@ -1,0 +1,11 @@
+C:\Users\Korisnik\Desktop\virtuelizacija\MotorMonitoring\MotorMonitoring.Server\bin\Debug\MotorMonitoring.Server.exe.config
+C:\Users\Korisnik\Desktop\virtuelizacija\MotorMonitoring\MotorMonitoring.Server\bin\Debug\MotorMonitoring.Server.exe
+C:\Users\Korisnik\Desktop\virtuelizacija\MotorMonitoring\MotorMonitoring.Server\bin\Debug\MotorMonitoring.Server.pdb
+C:\Users\Korisnik\Desktop\virtuelizacija\MotorMonitoring\MotorMonitoring.Server\bin\Debug\MotorMonitoring.Contracts.dll
+C:\Users\Korisnik\Desktop\virtuelizacija\MotorMonitoring\MotorMonitoring.Server\bin\Debug\MotorMonitoring.Contracts.pdb
+C:\Users\Korisnik\Desktop\virtuelizacija\MotorMonitoring\MotorMonitoring.Server\obj\Debug\MotorMonitoring.Service.csproj.AssemblyReference.cache
+C:\Users\Korisnik\Desktop\virtuelizacija\MotorMonitoring\MotorMonitoring.Server\obj\Debug\MotorMonitoring.Service.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\virtuelizacija\MotorMonitoring\MotorMonitoring.Server\obj\Debug\MotorMon.DF20CEF2.Up2Date
+C:\Users\Korisnik\Desktop\virtuelizacija\MotorMonitoring\MotorMonitoring.Server\obj\Debug\MotorMonitoring.Server.exe
+C:\Users\Korisnik\Desktop\virtuelizacija\MotorMonitoring\MotorMonitoring.Server\obj\Debug\MotorMonitoring.Server.pdb
+C:\Users\Korisnik\Desktop\virtuelizacija\MotorMonitoring\MotorMonitoring.Server\obj\Debug\MotorMonitoring.Server.exe.config
