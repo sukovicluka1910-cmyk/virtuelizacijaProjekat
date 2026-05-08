@@ -9,3 +9,14 @@ C:\Users\Korisnik\Desktop\virtuelizacija\MotorMonitoring\MotorMonitoring.Client\
 C:\Users\Korisnik\Desktop\virtuelizacija\MotorMonitoring\MotorMonitoring.Client\obj\Debug\MotorMonitoring.Client.exe
 C:\Users\Korisnik\Desktop\virtuelizacija\MotorMonitoring\MotorMonitoring.Client\obj\Debug\MotorMonitoring.Client.pdb
 C:\Users\Korisnik\Desktop\virtuelizacija\MotorMonitoring\MotorMonitoring.Client\obj\Debug\MotorMonitoring.Client.exe.config
+C:\Users\Korisnik\Desktop\virtuelizacija_projekat\MotorMonitoring\MotorMonitoring.Client\bin\Debug\MotorMonitoring.Client.exe.config
+C:\Users\Korisnik\Desktop\virtuelizacija_projekat\MotorMonitoring\MotorMonitoring.Client\bin\Debug\MotorMonitoring.Client.exe
+C:\Users\Korisnik\Desktop\virtuelizacija_projekat\MotorMonitoring\MotorMonitoring.Client\bin\Debug\MotorMonitoring.Client.pdb
+C:\Users\Korisnik\Desktop\virtuelizacija_projekat\MotorMonitoring\MotorMonitoring.Client\bin\Debug\MotorMonitoring.Contracts.dll
+C:\Users\Korisnik\Desktop\virtuelizacija_projekat\MotorMonitoring\MotorMonitoring.Client\bin\Debug\MotorMonitoring.Contracts.pdb
+C:\Users\Korisnik\Desktop\virtuelizacija_projekat\MotorMonitoring\MotorMonitoring.Client\obj\Debug\MotorMonitoring.Client.csproj.AssemblyReference.cache
+C:\Users\Korisnik\Desktop\virtuelizacija_projekat\MotorMonitoring\MotorMonitoring.Client\obj\Debug\MotorMonitoring.Client.exe.config
+C:\Users\Korisnik\Desktop\virtuelizacija_projekat\MotorMonitoring\MotorMonitoring.Client\obj\Debug\MotorMonitoring.Client.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Desktop\virtuelizacija_projekat\MotorMonitoring\MotorMonitoring.Client\obj\Debug\MotorMon.09608522.Up2Date
+C:\Users\Korisnik\Desktop\virtuelizacija_projekat\MotorMonitoring\MotorMonitoring.Client\obj\Debug\MotorMonitoring.Client.exe
+C:\Users\Korisnik\Desktop\virtuelizacija_projekat\MotorMonitoring\MotorMonitoring.Client\obj\Debug\MotorMonitoring.Client.pdb

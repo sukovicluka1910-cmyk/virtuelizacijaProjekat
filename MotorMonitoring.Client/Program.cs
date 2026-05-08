@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ServiceModel;
+using System.Configuration;
 using MotorMonitoring.Contracts;
 
 namespace MotorMonitoring.Client
@@ -12,50 +13,44 @@ namespace MotorMonitoring.Client
     {
         static void Main(string[] args)
         {
-            ChannelFactory<IMotorService> factory =
-                new ChannelFactory<IMotorService>("MotorService");
-
-            IMotorService proxy = factory.CreateChannel();
+            string csvPath = ConfigurationManager.AppSettings["csvPath"];
+            string logPath = ConfigurationManager.AppSettings["logPath"];
 
             try
             {
-                // Pocetak sesije
-                string result = proxy.StartSession("TestSesija");
-                Console.WriteLine(result);
-
-                // Test sa ispravnim uzorkom
-                MotorSample sample = new MotorSample()
+                using (CsvReader csvReader = new CsvReader(csvPath, logPath))
+                using (MotorServiceClient client = new MotorServiceClient())
                 {
-                    I_q = 10.5f,
-                    I_d = 5.2f,
-                    Coolant = 25.0f,
-                    Profile_Id = 1,
-                    Ambient = 20.0f,
-                    Torque = 15.0f
-                };
+                    // Ucitaj prvih 100 uzoraka
+                    var samples = csvReader.ReadSamples(100);
 
-                result = proxy.PushSample(sample);
-                Console.WriteLine(result);
+                    // Pocetak sesije
+                    string result = client.StartSession("Sesija_01");
+                    Console.WriteLine(result);
 
-                // Kraj sesije
-                result = proxy.EndSession();
-                Console.WriteLine(result);
+                    // Salji uzorke jedan po jedan
+                    foreach (var sample in samples)
+                    {
+                        result = client.PushSample(sample);
+                        Console.WriteLine(result);
+                    }
+
+                    // Kraj sesije
+                    result = client.EndSession();
+                    Console.WriteLine(result);
+                }
             }
             catch (FaultException<DataFormatFault> ex)
             {
-                Console.WriteLine($"DataFormatFault greska: {ex.Detail.Message}, Polje: {ex.Detail.FieldName}");
+                Console.WriteLine($"DataFormatFault: {ex.Detail.Message}");
             }
             catch (FaultException<ValidationFault> ex)
             {
-                Console.WriteLine($"ValidationFault greska: {ex.Detail.Message}, Polje: {ex.Detail.FieldName}, Vrednost: {ex.Detail.InvalidValue}");
+                Console.WriteLine($"ValidationFault: {ex.Detail.Message}");
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Greska: {ex.Message}");
-            }
-            finally
-            {
-                factory.Close();
             }
 
             Console.WriteLine("Pritisnite Enter za izlaz.");
