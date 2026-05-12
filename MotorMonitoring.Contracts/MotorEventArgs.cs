@@ -61,4 +61,66 @@ namespace MotorMonitoring.Contracts
             Time = DateTime.Now;
         }
     }
+
+    // Događaj za nagli skok struje Q komponente
+    public class ElectricSpikeQEventArgs : EventArgs
+    {
+        public float Delta { get; set; }
+        public string Direction { get; set; }
+        public DateTime Time { get; set; }
+
+        public ElectricSpikeQEventArgs(float delta)
+        {
+            Delta = delta;
+            Direction = delta > 0 ? "iznad ocekivanog" : "ispod ocekivanog";
+            Time = DateTime.Now;
+        }
+    }
+
+    // Događaj za nagli skok struje D komponente
+    public class ElectricSpikeDEventArgs : EventArgs
+    {
+        public float Delta { get; set; }
+        public string Direction { get; set; }
+        public DateTime Time { get; set; }
+
+        public ElectricSpikeDEventArgs(float delta)
+        {
+            Delta = delta;
+            Direction = delta > 0 ? "iznad ocekivanog" : "ispod ocekivanog";
+            Time = DateTime.Now;
+        }
+    }
+
+    // Događaj za nagli skok temperature rashladne tečnosti
+    public class TemperatureSpikeEventArgs : EventArgs
+    {
+        public float Delta { get; set; }
+        public string Direction { get; set; }
+        public DateTime Time { get; set; }
+
+        public TemperatureSpikeEventArgs(float delta)
+        {
+            Delta = delta;
+            Direction = delta > 0 ? "iznad ocekivanog" : "ispod ocekivanog";
+            Time = DateTime.Now;
+        }
+    }
+
+    // Događaj kada temperatura odstupa od tekućeg proseka ±25%
+    public class OutOfBandWarningEventArgs : EventArgs
+    {
+        public float CurrentTemp { get; set; }
+        public float MeanTemp { get; set; }
+        public string Direction { get; set; }
+        public DateTime Time { get; set; }
+
+        public OutOfBandWarningEventArgs(float currentTemp, float meanTemp)
+        {
+            CurrentTemp = currentTemp;
+            MeanTemp = meanTemp;
+            Direction = currentTemp > meanTemp ? "iznad ocekivane vrijednosti" : "ispod ocekivane vrijednosti";
+            Time = DateTime.Now;
+        }
+    }
 }
