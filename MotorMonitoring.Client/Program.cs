@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ServiceModel;
 using System.Configuration;
+using System.Threading;
 using MotorMonitoring.Contracts;
 
 namespace MotorMonitoring.Client
@@ -32,12 +33,15 @@ namespace MotorMonitoring.Client
                     foreach (var sample in samples)
                     {
                         result = client.PushSample(sample);
-                        Console.WriteLine(result);
+                        Console.WriteLine($"Prenos u toku... {result}");
+
+                        // Kašnjenje 500ms između uzoraka - simulacija realnog vremena
+                        Thread.Sleep(500);
                     }
 
                     // Kraj sesije
                     result = client.EndSession();
-                    Console.WriteLine(result);
+                    Console.WriteLine($"Zavrsen prenos! {result}");
                 }
             }
             catch (FaultException<DataFormatFault> ex)
