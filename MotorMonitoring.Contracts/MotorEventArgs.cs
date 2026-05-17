@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace MotorMonitoring.Contracts
 {
+    // PODACI O DOGADJAJIMA
+
     // Događaj kada sesija počne
     public class TransferStartedEventArgs : EventArgs
     {

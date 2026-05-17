@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Korisnik\\Desktop\\virtuelizacija_projekat\\MotorMonitoring\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{718058D7-FD7D-4B44-8516-65FBFE646D0D}|MotorMonitoring.Server\\MotorMonitoring.Service.csproj|c:\\users\\korisnik\\desktop\\virtuelizacija_projekat\\motormonitoring\\motormonitoring.server\\motorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{718058D7-FD7D-4B44-8516-65FBFE646D0D}|MotorMonitoring.Server\\MotorMonitoring.Service.csproj|solutionrelative:motormonitoring.server\\motorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{406819AF-5C6C-45DC-B005-FB8DC24A6900}|MotorMonitoring.Contracts\\MotorMonitoring.Contracts.csproj|C:\\Users\\Korisnik\\Desktop\\virtuelizacija_projekat\\MotorMonitoring\\motormonitoring.contracts\\motoreventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{406819AF-5C6C-45DC-B005-FB8DC24A6900}|MotorMonitoring.Contracts\\MotorMonitoring.Contracts.csproj|solutionrelative:motormonitoring.contracts\\motoreventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24AC446F-65E3-4E2E-8EB2-37D6DDBEBBEC}|MotorMonitoring.Client\\MotorMonitoring.Client.csproj|C:\\Users\\Korisnik\\Desktop\\virtuelizacija_projekat\\MotorMonitoring\\motormonitoring.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{24AC446F-65E3-4E2E-8EB2-37D6DDBEBBEC}|MotorMonitoring.Client\\MotorMonitoring.Client.csproj|c:\\users\\korisnik\\desktop\\virtuelizacija_projekat\\motormonitoring\\motormonitoring.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24AC446F-65E3-4E2E-8EB2-37D6DDBEBBEC}|MotorMonitoring.Client\\MotorMonitoring.Client.csproj|solutionrelative:motormonitoring.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{718058D7-FD7D-4B44-8516-65FBFE646D0D}|MotorMonitoring.Server\\MotorMonitoring.Service.csproj|C:\\Users\\Korisnik\\Desktop\\virtuelizacija_projekat\\MotorMonitoring\\motormonitoring.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{718058D7-FD7D-4B44-8516-65FBFE646D0D}|MotorMonitoring.Server\\MotorMonitoring.Service.csproj|solutionrelative:motormonitoring.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24AC446F-65E3-4E2E-8EB2-37D6DDBEBBEC}|MotorMonitoring.Client\\MotorMonitoring.Client.csproj|c:\\users\\korisnik\\desktop\\virtuelizacija_projekat\\motormonitoring\\motormonitoring.client\\motorserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24AC446F-65E3-4E2E-8EB2-37D6DDBEBBEC}|MotorMonitoring.Client\\MotorMonitoring.Client.csproj|solutionrelative:motormonitoring.client\\motorserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24AC446F-65E3-4E2E-8EB2-37D6DDBEBBEC}|MotorMonitoring.Client\\MotorMonitoring.Client.csproj|c:\\users\\korisnik\\desktop\\virtuelizacija_projekat\\motormonitoring\\motormonitoring.client\\csvreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24AC446F-65E3-4E2E-8EB2-37D6DDBEBBEC}|MotorMonitoring.Client\\MotorMonitoring.Client.csproj|solutionrelative:motormonitoring.client\\csvreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,57 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MotorEventArgs.cs",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\virtuelizacija_projekat\\MotorMonitoring\\MotorMonitoring.Contracts\\MotorEventArgs.cs",
-              "RelativeDocumentMoniker": "MotorMonitoring.Contracts\\MotorEventArgs.cs",
-              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\virtuelizacija_projekat\\MotorMonitoring\\MotorMonitoring.Contracts\\MotorEventArgs.cs",
-              "RelativeToolTip": "MotorMonitoring.Contracts\\MotorEventArgs.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAgwH0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T13:01:49.691Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MotorService.cs",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\virtuelizacija_projekat\\MotorMonitoring\\MotorMonitoring.Server\\MotorService.cs",
-              "RelativeDocumentMoniker": "MotorMonitoring.Server\\MotorService.cs",
-              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\virtuelizacija_projekat\\MotorMonitoring\\MotorMonitoring.Server\\MotorService.cs",
-              "RelativeToolTip": "MotorMonitoring.Server\\MotorService.cs",
-              "ViewState": "AgIAAOIAAAAAAAAAAAAswPkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-07T09:31:08.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\virtuelizacija_projekat\\MotorMonitoring\\MotorMonitoring.Client\\Program.cs",
               "RelativeDocumentMoniker": "MotorMonitoring.Client\\Program.cs",
               "ToolTip": "C:\\Users\\Korisnik\\Desktop\\virtuelizacija_projekat\\MotorMonitoring\\MotorMonitoring.Client\\Program.cs",
               "RelativeToolTip": "MotorMonitoring.Client\\Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwD8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwC4AAAC+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-07T09:22:53.858Z"
+              "WhenOpened": "2026-05-17T13:39:59.697Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\virtuelizacija_projekat\\MotorMonitoring\\MotorMonitoring.Server\\Program.cs",
-              "RelativeDocumentMoniker": "MotorMonitoring.Server\\Program.cs",
-              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\virtuelizacija_projekat\\MotorMonitoring\\MotorMonitoring.Server\\Program.cs",
-              "RelativeToolTip": "MotorMonitoring.Server\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "MotorServiceClient.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\virtuelizacija_projekat\\MotorMonitoring\\MotorMonitoring.Client\\MotorServiceClient.cs",
+              "RelativeDocumentMoniker": "MotorMonitoring.Client\\MotorServiceClient.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\virtuelizacija_projekat\\MotorMonitoring\\MotorMonitoring.Client\\MotorServiceClient.cs",
+              "RelativeToolTip": "MotorMonitoring.Client\\MotorServiceClient.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwA4AAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-07T09:19:40.266Z"
+              "WhenOpened": "2026-05-17T13:34:18.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CsvReader.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\virtuelizacija_projekat\\MotorMonitoring\\MotorMonitoring.Client\\CsvReader.cs",
+              "RelativeDocumentMoniker": "MotorMonitoring.Client\\CsvReader.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\virtuelizacija_projekat\\MotorMonitoring\\MotorMonitoring.Client\\CsvReader.cs",
+              "RelativeToolTip": "MotorMonitoring.Client\\CsvReader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T13:22:51.571Z",
+              "EditorCaption": ""
             }
           ]
         }

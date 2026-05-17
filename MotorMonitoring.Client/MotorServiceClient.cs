@@ -8,10 +8,11 @@ using MotorMonitoring.Contracts;
 
 namespace MotorMonitoring.Client
 {
-    public class MotorServiceClient : IDisposable
+    public class MotorServiceClient : IDisposable //Implementira IDisposable jer koristimo ChannelFactory koji je unmanaged resurs
+
     {
         private ChannelFactory<IMotorService> factory;
-        private IMotorService proxy;
+        private IMotorService proxy; //objekat koji sluzi za pozivanje metoda servisa
         private bool disposed = false;
 
         public MotorServiceClient()

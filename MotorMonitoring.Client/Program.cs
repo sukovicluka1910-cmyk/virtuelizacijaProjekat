@@ -44,7 +44,7 @@ namespace MotorMonitoring.Client
                     Console.WriteLine($"Zavrsen prenos! {result}");
                 }
             }
-            catch (FaultException<DataFormatFault> ex)
+            catch (FaultException<DataFormatFault> ex) // prvo ide ova greska jer je ona najspecificija, da je prvo stavljen Exeption to je najopstija greska ostale ne bi bile nikad uhvacene
             {
                 Console.WriteLine($"DataFormatFault: {ex.Detail.Message}");
             }

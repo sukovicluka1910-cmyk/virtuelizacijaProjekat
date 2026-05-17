@@ -1,22 +1,24 @@
-﻿using System;
+﻿using MotorMonitoring.Contracts;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ServiceModel;
 using System.Configuration;
 using System.IO;
-using MotorMonitoring.Contracts;
+using System.Linq;
+using System.ServiceModel;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace MotorMonitoring.Service
 {
     public class MotorService : IMotorService
     {
+        // Pragovi koji se ucitavaju iz appconfiga
         private float Id_threshold;
         private float Iq_threshold;
         private float T_threshold;
-        private string storagePath;
-        private int totalSamples = 0;
+        private string storagePath;  //putanja gdje cuvamo fajlove
+        private int totalSamples = 0; //brojac primljenih uzoraka
 
         // Prethodni uzorci za analitiku
         private float? previousIq = null;
@@ -69,7 +71,7 @@ namespace MotorMonitoring.Service
 
             Console.WriteLine($"Pragovi ucitani: Id={Id_threshold}, Iq={Iq_threshold}, T={T_threshold}");
 
-            // Pretplata na događaje
+            // Pretplata na događaje, Lambda izraz (sender, e) => → anonimna metoda koja reaguje na događaj
             OnTransferStarted += (sender, e) =>
                 Console.WriteLine($"[DOGADJAJ] Transfer zapocet: {e.Meta} u {e.Time}");
 
@@ -97,6 +99,7 @@ namespace MotorMonitoring.Service
 
         public string StartSession(string meta)
         {
+            // Resetujemo sve vrijednosti na početku svake sesije, važno jer servis može imati više sesija jedna za drugom
             Console.WriteLine($"Sesija zapoceta: {meta}");
             totalSamples = 0;
             previousIq = null;
@@ -109,6 +112,7 @@ namespace MotorMonitoring.Service
             idSum = 0;
             idCount = 0;
 
+            // Fajl za validne uzorke i fajl za nevalidne uzorke
             string measurementsPath = Path.Combine(storagePath, "measurements_session.csv");
             string rejectsPath = Path.Combine(storagePath, "rejects.csv");
 
@@ -124,6 +128,7 @@ namespace MotorMonitoring.Service
             Console.WriteLine("Fajlovi kreirani!");
             Console.WriteLine("Prenos podataka zapocet...");
 
+            //okini dogadjaj
             OnTransferStarted?.Invoke(this, new TransferStartedEventArgs(meta));
 
             return "ACK - IN_PROGRESS";
@@ -207,7 +212,7 @@ namespace MotorMonitoring.Service
             if (sample.Coolant < 0.75f * coolantMean || sample.Coolant > 1.25f * coolantMean)
                 OnOutOfBandWarning?.Invoke(this, new OutOfBandWarningEventArgs(sample.Coolant, coolantMean));
 
-            // Zadatak 1 - tekući prosek I_q i ±25% odstupanje
+            // Zadatak 1 - tekući prosek I_q i ±25% odstupanje 
             iqSum += sample.I_q;
             iqCount++;
             float iqMean = iqSum / iqCount;
